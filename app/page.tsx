@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
 import BlogCards from "./blogScreen";
+import { Navbar } from "./home/navBarmenu";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="bg-white grid items-center justify-center ">
         <BlogCards />
       </div>
+      {/* <NavbarMenu /> */}
     </div>
   );
 }
