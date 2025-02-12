@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { Card } from "@/components/ui/apple-cards-carousel";
-import { Navbar } from "./home/navBarmenu";
 
 export default function BlogCards() {
   const cards = data.map((card, index) => (
@@ -17,9 +16,6 @@ export default function BlogCards() {
       </h2>
       <div className="grid w-full mt-16 items-center justify-center">
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">{cards}</div>
-      </div>
-      <div className="mt-10">
-        <Navbar />
       </div>
     </div>
   );

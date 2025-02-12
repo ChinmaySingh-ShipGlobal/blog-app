@@ -3,17 +3,19 @@ import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
 import BlogCards from "./blogScreen";
-import { Navbar } from "./home/navBarmenu";
+import NavbarMenu from "./home/navBarmenu";
 
 export default function Home() {
   return (
-    <div className="bg-black">
-      <LampDemo />
-      <div className="bg-white grid items-center justify-center ">
-        <BlogCards />
+    <>
+      <div className="bg-black">
+        <NavbarMenu />
+        <LampDemo />
+        <div className="bg-white grid items-center justify-center ">
+          <BlogCards />
+        </div>
       </div>
-      {/* <NavbarMenu /> */}
-    </div>
+    </>
   );
 }
 
